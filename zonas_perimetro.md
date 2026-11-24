@@ -5,10 +5,10 @@
 | Servicio | Zona | Justificación |
 |-----------|------|--------------|
 Web corporativa pública | DMZ | Se comunica con internet, así que se necesita aislarla en la DMZ |
-Servidor de correo |  |  |
-Pasarela VPN  |   |   |
-Proxy (saliente e inverso)  |   |   |
-HMI de planta y carpeta de planos |   |   |
+Servidor de correo | DMZ | Necesita intercambiar conexiones con internet, aislarla. |
+Pasarela VPN  |  DMZ |  como es la puerta de la lan hacia internet, aislarla. |
+Proxy (saliente e inverso)  | DMZ  |  Ya que actúa como un puente entre muchas redes he inspecciona el tráfico para evitar las conexiones directas de la lan a internet. |
+HMI de planta y carpeta de planos |  Zona crítica |   |
 Autoridad de certificación (srv-ca)  |   |   |
 Servidor de copias de seguridad |    |    |
 Portátiles de ingenieros y operarios  |  | |
@@ -20,10 +20,10 @@ Servidor de registros y monitorización |  |  |
 
 | Origen -> destino | ¿Permitido? | Ejemplo concreto |
 |--------------------|-----------|---------------|
-Internet → DMZ |   |  | 
-Internet → LAN |   |  | 
-DMZ → LAN  |    |    |  
-LAN → DMZ   |   |  |
+Internet → DMZ | SI  |  | 
+Internet → LAN |   NO |  | 
+DMZ → LAN  |  NO a menos que sea necessario  |    |  
+LAN → DMZ   | si  |  |
 LAN → Internet  |   |   |
 
 
