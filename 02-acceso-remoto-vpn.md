@@ -4,7 +4,7 @@
 
 #### 0.1 Adaptadores en VirtualBox
 
-MV srv-ca:
+MV srv-ca con red interna:
 
 <img width="605" height="91" alt="image" src="https://github.com/user-attachments/assets/dd1a320d-37b4-4f11-8faf-3f2f2742af5e" />
 
