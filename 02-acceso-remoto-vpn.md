@@ -8,3 +8,6 @@ MV srv-ca con red interna:
 
 <img width="605" height="91" alt="image" src="https://github.com/user-attachments/assets/dd1a320d-37b4-4f11-8faf-3f2f2742af5e" />
 
+dmz-vpn con dos interfaces, net-externa y net-lan:
+
+<img width="610" height="100" alt="image" src="https://github.com/user-attachments/assets/95d3472d-ab1a-4345-afb6-7c9d2a44d63f" />
