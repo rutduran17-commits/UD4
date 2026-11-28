@@ -27,7 +27,7 @@ LAN → DMZ   | si  | los equipos de la LAN, navegana la web a traves del proxy.
 LAN → Internet  | Directamente no  | Todo el tráfico debe de pasar por el proxy.  |
 LAN ->  Zona crítica| Si( recontra restringido) | Zona crítica | Como los equipos autorizados acceden a la carpeta de planos.|
 Zona crítica -> LAN/DMZ| No (salvo cosas puntuales) | El servidor de copias de seguridad cuando hace los respaldos programados.|
-Red Invitados -> Internet |  Si  | 
+Red Invitados -> Internet |  Si  | Ya que solo necesitarán conectarse a internet|
 
 
 ### 3. Un diagrama de la red
@@ -39,6 +39,8 @@ flowchart LR
 ### 4. Una pregunta de reflexión 
 
 si cae el servidor web, ¿qué puede hacer el atacante en tu diseño y qué se lo impide?
+
+Primero el atacante tuvo que pasar por el primer cortafuegos, pero solo tendrá accesos a la DMZ, no podrá ir más adentro porque se ha limitado las conexiones, si en caso, tendría que pasar por el siguiente cortafuegos y ya para eso, se podría dar con el atacante.
 
 
 
