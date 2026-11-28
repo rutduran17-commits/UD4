@@ -20,11 +20,12 @@ Servidor de registros y monitorización | Zona crítica | Al tener todos los reg
 
 | Origen -> destino | ¿Permitido? | Ejemplo concreto |
 |--------------------|-----------|---------------|
-Internet → DMZ | SI  |  | 
-Internet → LAN |   NO |  | 
-DMZ → LAN  |  NO a menos que sea necessario  |    |  
-LAN → DMZ   | si  |  |
-LAN → Internet  |   |   |
+Internet → DMZ | SI pero restringido | Ingresando mediante https a mi web.  | 
+Internet → LAN |   NO |  Al no estar permitido, el cortafuegos lo bloquea. | 
+DMZ → LAN  |  NO a menos que sea necessario  |  Si la web llega a ser ultrajada, comprometería la LAN  |  
+LAN → DMZ   | si  | los equipos de la LAN, navegana la web a traves del proxy.  |
+LAN → Internet  | Directamente no  | Todo el tráfico debe de pasar por el proxy.  |
+LAN -> | Si( recontra restringido) | Zona crítica | Como los equipos autorizados acceden a la carpeta de planos.|
 
 
 ### 3. Un diagrama de la red
