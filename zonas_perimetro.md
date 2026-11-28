@@ -25,7 +25,9 @@ Internet → LAN |   NO |  Al no estar permitido, el cortafuegos lo bloquea. |
 DMZ → LAN  |  NO a menos que sea necessario  |  Si la web llega a ser ultrajada, comprometería la LAN  |  
 LAN → DMZ   | si  | los equipos de la LAN, navegana la web a traves del proxy.  |
 LAN → Internet  | Directamente no  | Todo el tráfico debe de pasar por el proxy.  |
-LAN -> | Si( recontra restringido) | Zona crítica | Como los equipos autorizados acceden a la carpeta de planos.|
+LAN ->  Zona crítica| Si( recontra restringido) | Zona crítica | Como los equipos autorizados acceden a la carpeta de planos.|
+Zona crítica -> LAN/DMZ| No (salvo cosas puntuales) | El servidor de copias de seguridad cuando hace los respaldos programados.|
+Red Invitados -> Internet |  Si  | 
 
 
 ### 3. Un diagrama de la red
